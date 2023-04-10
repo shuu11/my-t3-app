@@ -8,8 +8,20 @@
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
+
+		"■husky":"#############",
     "husky-init": "npx husky-init",
-    "prepare": "husky install"
+    "prepare": "husky install",
+
+		"■supabase":"#############",
+		"supabase:v":"npx supabase -v",
+		"supabase:login":"npx supabase login",
+		"supabase:init":"npx supabase init",
+		"supabase:start":"npx supabase start",
+		"supabase:stop":"npx supabase stop",
+
+		"■prisma":"#############",
+		"prisma:migrate":"npx prisma migrate dev --name init"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",
@@ -44,6 +56,7 @@
     "prettier-plugin-tailwindcss": "^0.2.6",
     "prisma": "^4.11.0",
     "react-hot-toast": "^2.4.0",
+    "supabase": "^1.50.1",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.0.2"
   },
